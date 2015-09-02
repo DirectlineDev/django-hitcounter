@@ -55,3 +55,17 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# OS or Editor folders
+.DS_Store
+.cache
+.directory
+.project
+.settings
+.tmproj
+.ropeproject
+.pydevproject
+nbproject
+Thumbs.db
+.idea
+*.orig
