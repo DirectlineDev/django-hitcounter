@@ -2,6 +2,9 @@
 Django Hitcounter
 =================
 
+.. image:: https://travis-ci.org/DirectlineDev/django-hitcounter.svg?branch=master
+    :target: https://travis-ci.org/DirectlineDev/django-hitcounter
+
 About
 -----
 
