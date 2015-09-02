@@ -17,7 +17,7 @@ setup(
     packages=find_packages(exclude=("tests", "docs")),
 
     description='Pretty simple hit counter for Django ORM objects',
-    long_description=read(path.join(path.dirname(__file__), 'README.md')),
+    long_description=read(path.join(path.dirname(__file__), 'README.rst')),
 
     url='https://github.com/DirectlineDev/django-hitcounter',
     download_url='https://github.com/DirectlineDev/django-hitcounter/archive/master.zip',
