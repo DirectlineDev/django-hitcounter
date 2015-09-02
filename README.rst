@@ -20,12 +20,12 @@ Installation
 
 .. code:: sh
 
- pip install django-hitcounter
+ pip install djangohitcounter
 
 
 or add ``django_hitcounter`` to your Python path
 
-2. Add the ``django-hitcounter`` app to your ``INSTALLED_APPS``:
+2. Add the ``django_hitcounter`` app to your ``INSTALLED_APPS``:
 
 .. code:: python
 
