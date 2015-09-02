@@ -19,7 +19,7 @@ class Counter(models.Model):
     """
     # Content-object field
     content_type = models.ForeignKey(ContentType,
-                                     verbose_name=_('application'),
+                                     verbose_name=_('content type'),
                                      related_name="content_type_set_for_%(class)s")
     object_pk = models.TextField(_('object ID'))
     content_object = GenericForeignKey(ct_field="content_type", fk_field="object_pk")

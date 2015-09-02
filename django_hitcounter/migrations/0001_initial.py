@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                 ('object_pk', models.TextField(verbose_name='object ID')),
                 ('date', models.DateField(default=django.utils.timezone.now, verbose_name='date')),
                 ('hits', models.PositiveIntegerField(default=0, verbose_name='hits count')),
-                ('content_type', models.ForeignKey(verbose_name='application', to='contenttypes.ContentType', related_name='content_type_set_for_counter')),
+                ('content_type', models.ForeignKey(verbose_name='content type', to='contenttypes.ContentType', related_name='content_type_set_for_counter')),
             ],
             options={
                 'verbose_name': 'counter',
