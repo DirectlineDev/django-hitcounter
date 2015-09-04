@@ -7,8 +7,8 @@ env:
 - DJANGO=1.7.10
 - DJANGO=1.8.4
 install:
-- pip install -q Django==$DJANGO --use-mirrors
-- pip install -q -e . --use-mirrors
+- pip install -q Django==$DJANGO
+- pip install -q -e .
 script:
 - python setup.py test
 deploy:
