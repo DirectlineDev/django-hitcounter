@@ -4,6 +4,7 @@ from django.utils import timezone
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.db import models, transaction
+from django.db.models import F
 from django.utils.translation import ugettext_lazy as _
 from django.utils.encoding import python_2_unicode_compatible
 
@@ -50,9 +51,8 @@ class Counter(models.Model):
         """
         ct = ContentType.objects.get_for_model(obj)
         date = date or timezone.now()
-        with transaction.atomic():
-            record, created = cls.objects.get_or_create(content_type=ct, object_pk=obj._get_pk_val(), date=date)
-            record.hits += amount
-            record.clean()
-            record.save()
+        cls.objects.update_or_create(content_type=ct, object_pk=obj._get_pk_val(), date=date,
+                                     defaults={'hits': F('hits')+amount})
+
+
 
