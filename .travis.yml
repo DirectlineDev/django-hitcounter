@@ -1,21 +1,21 @@
 language: python
 python:
-  - 2.7
-  - 3.4
+- 2.7
+- 3.4
 env:
-  - DJANGO=1.6.11
-  - DJANGO=1.7.10
-  - DJANGO=1.8.4
+- DJANGO=1.6.11
+- DJANGO=1.7.10
+- DJANGO=1.8.4
 install:
-  - pip install -q Django==$DJANGO --use-mirrors
-  - pip install -q -e . --use-mirrors
+- pip install -q Django==$DJANGO --use-mirrors
+- pip install -q -e . --use-mirrors
 script:
-  - python setup.py test
+- python setup.py test
 deploy:
   provider: pypi
   user: MrYoda
   password:
-    secure: mJj8l8WJOboQoKQ+UBQjFgb1AWhqgqus2dp8/0Ls3HzfjD3Wv3vsgaQjAvucFjkL4w2EOKHyNFUvshmSEr9aN8mq41flrRW6JxOw1AzBBGQuXwhWVMv6W8Wp9tzIDS4d0215qMQh+4c0zwbwtLX+6avknqMPFeKmzIDKlmBqLVkFnimYCK55ri5IbW3Ba48ugwsTtebURV8Zm6nfCxaOZ4/YqrrR3g5UkXgp67jVJ2JMLjNJ8Iv5xzaCjaXa9sG5XzCf82B/JkWQ36cYT+kfZVhM4zQQDLfQHHR2V6prOBcvCTWsf7tjAjwmJRWOfwx1NACvcr1hJSQ519wPiWCU1fwqkxmpMui5T6PYrkKQa2UDLFfILLE8M1MjiAgI1/oVC3wgap/YdLTIHMDNYWSMejwfT92xrhZwthWRbg8vDK1U2++tmi/56I/TPbmPZwVCev0S77PATBUFCCthCrGZuCHkSl1fa9+g6Ytm2OXTL6dQueFtznPciXLmCrRILa9dTpcF+ewW3DAAx+5y7og0ONjG80slaqPvRWJOVkL2s+juHpsKHjMvzbAvfCECOikOa1vHXe9Jm/LPRmq+lg6xKM1q2473uWo4LJ2twxNzjXejFuXzQF/WuBJ935PI76r0KAO8ftAGx87RdsWaJAcEKGEUj8LjNWdX58GjVp81oUA=
+    secure: oBBzxRoJ0BtltucASBMsnQHQwXXO/G4LBYYFPTTA8B6ojwZwjWNUM0NUuU5H4gcAyx/PERO71qzWnbux4ILrSzKw2/C2OgJEXVpYV+R6ULUip3wLYIdoLENEW/F+O5HPxm2fXWiHxXbeSZhy7dU0j98EygbSIrwSWRq6j/AZnPF/NJDS30909uv6CnNVnKZy6TKo8v7YJERB08ggWcauXzW8zAfcS/Y/23Jz3uT/X49QGjzZBE/nTJF+PV5vXECzDMSOWSDTBfFhYth4txKP53JAnDWh/aIT8pgVkcxSUCySxvK5UgVO38/UYUiVpJLTwQbQxh0xd+d7Mm/kKe5JlYcyw/4wtxq7nPXBuILC6rbTiBVWanVMrqMn0DWhLC/B9rrOzZ6rH1xn4MdM3wVdUbP108F8Kg3zqTpOAb6ctVZHAo/FD3JiP+a4BXe8sS3E7QEG0yB5vZyNwUNhpjVJGJHFmAlsHWHHXIz/hjo6u8NOyy1dRKhHQcMvcOuuMifK7vhF0PnLA0EetwEK4SM24WRn/i5cL8fG3/PtvJ3YIUwIN+SazPdDthH7chqIwLTHcBXT5XLlTdbg/lEYXUfFMA6Buz1vRdcISiS5Rdfzm40ayPt9Aeyh5O+dYBSUR28I8nu5SmAUdvhNeeuOBSCr19/Kjrrj7+wzs9Qlbur2SuE=
   on:
     tags: true
     repo: DirectlineDev/django-hitcounter
