@@ -11,3 +11,12 @@ install:
   - pip install -q -e . --use-mirrors
 script:
   - python setup.py test
+deploy:
+  provider: pypi
+  user: MrYoda
+  password:
+    secure: mJj8l8WJOboQoKQ+UBQjFgb1AWhqgqus2dp8/0Ls3HzfjD3Wv3vsgaQjAvucFjkL4w2EOKHyNFUvshmSEr9aN8mq41flrRW6JxOw1AzBBGQuXwhWVMv6W8Wp9tzIDS4d0215qMQh+4c0zwbwtLX+6avknqMPFeKmzIDKlmBqLVkFnimYCK55ri5IbW3Ba48ugwsTtebURV8Zm6nfCxaOZ4/YqrrR3g5UkXgp67jVJ2JMLjNJ8Iv5xzaCjaXa9sG5XzCf82B/JkWQ36cYT+kfZVhM4zQQDLfQHHR2V6prOBcvCTWsf7tjAjwmJRWOfwx1NACvcr1hJSQ519wPiWCU1fwqkxmpMui5T6PYrkKQa2UDLFfILLE8M1MjiAgI1/oVC3wgap/YdLTIHMDNYWSMejwfT92xrhZwthWRbg8vDK1U2++tmi/56I/TPbmPZwVCev0S77PATBUFCCthCrGZuCHkSl1fa9+g6Ytm2OXTL6dQueFtznPciXLmCrRILa9dTpcF+ewW3DAAx+5y7og0ONjG80slaqPvRWJOVkL2s+juHpsKHjMvzbAvfCECOikOa1vHXe9Jm/LPRmq+lg6xKM1q2473uWo4LJ2twxNzjXejFuXzQF/WuBJ935PI76r0KAO8ftAGx87RdsWaJAcEKGEUj8LjNWdX58GjVp81oUA=
+  on:
+    tags: true
+    repo: DirectlineDev/django-hitcounter
+    branch: master
