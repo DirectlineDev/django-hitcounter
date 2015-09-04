@@ -8,7 +8,7 @@ read = lambda file_path: codecs.open(file_path, 'r', 'utf-8').read()
 
 setup(
     name='djangohitcounter',
-    version='0.1.2',
+    version='0.1.4',
 
     author='Anton Kuzmichev',
     author_email='assargin@gmail.com',
