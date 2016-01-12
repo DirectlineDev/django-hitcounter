@@ -14,7 +14,7 @@ setup(
     author_email='assargin@gmail.com',
     license='Apache 2.0',
 
-    packages=find_packages(exclude=("tests", "docs")),
+    packages=find_packages(exclude=("tests",)),
 
     description='Pretty simple hit counter for Django ORM objects',
     long_description=read(path.join(path.dirname(__file__), 'README.rst')),

@@ -3,7 +3,7 @@ from django.utils import timezone
 
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes.fields import GenericForeignKey
-from django.db import models, transaction
+from django.db import models
 from django.db.models import F
 from django.utils.translation import ugettext_lazy as _
 from django.utils.encoding import python_2_unicode_compatible
@@ -55,4 +55,12 @@ class Counter(models.Model):
                                      defaults={'hits': F('hits')+amount})
 
 
+@python_2_unicode_compatible
+class DummyModel(models.Model):
+    """ Dummy model for tests
+    """
+    dummy_field = models.IntegerField(verbose_name='dummy field')
 
+    class Meta:
+        verbose_name = _('dummy model')
+        verbose_name_plural = _('dummy model')
