@@ -1,6 +1,8 @@
 from datetime import datetime, timedelta
 from django.test import TestCase
-from .models import Counter, DummyModel
+
+from django_hitcounter.models import Counter
+from test_app.models import DummyModel
 
 
 class CounterTestCase(TestCase):
@@ -17,4 +19,3 @@ class CounterTestCase(TestCase):
         Counter.hit(dummy, amount=3, date=datetime.today().date() - timedelta(days=1))
         self.assertEqual(7, Counter.objects.for_model(dummy, total=True))
         self.assertEqual(2, Counter.objects.for_model(dummy).count())
-

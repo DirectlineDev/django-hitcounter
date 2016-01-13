@@ -3,7 +3,8 @@ from os import path
 import codecs
 
 
-read = lambda file_path: codecs.open(file_path, 'r', 'utf-8').read()
+def readfile(file_path):
+    return codecs.open(file_path, 'r', 'utf-8').read()
 
 
 setup(
@@ -17,7 +18,7 @@ setup(
     packages=find_packages(exclude=("tests",)),
 
     description='Pretty simple hit counter for Django ORM objects',
-    long_description=read(path.join(path.dirname(__file__), 'README.rst')),
+    long_description=readfile(path.join(path.dirname(__file__), 'README.rst')),
 
     url='https://github.com/DirectlineDev/django-hitcounter',
     download_url='https://github.com/DirectlineDev/django-hitcounter/archive/master.zip',

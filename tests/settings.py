@@ -1,3 +1,5 @@
+SECRET_KEY = '_'
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -5,8 +7,13 @@ DATABASES = {
     },
 }
 
-SECRET_KEY = '_'
 INSTALLED_APPS = (
-#     'django_hitcounter',
-    'test_app'
+    'django.contrib.contenttypes',
+    'django_hitcounter',
+    'test_app',
 )
+
+ROOT_URLCONF = 'urls'
+
+MIDDLEWARE_CLASSES = ()
+

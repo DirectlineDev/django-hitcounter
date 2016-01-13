@@ -1,2 +1,3 @@
 # -*- coding: utf-8 -*-
-from .models import Counter
+default_app_config = 'django_hitcounter.apps.Config'
+
