@@ -1,25 +1,25 @@
 language: python
 python:
-  - 3.5
+- 3.5
 sudo: false
 env:
-  - TOXENV=py27-django17
-  - TOXENV=py27-django18
-  - TOXENV=py27-django19
-  - TOXENV=py34-django17
-  - TOXENV=py34-django18
-  - TOXENV=py34-django19
-  - TOXENV=py35-django19
+- TOXENV=py27-django17
+- TOXENV=py27-django18
+- TOXENV=py27-django19
+- TOXENV=py34-django17
+- TOXENV=py34-django18
+- TOXENV=py34-django19
+- TOXENV=py35-django19
 install:
-  - pip install -q tox
+- pip install -q tox
 script:
-  - tox
+- tox
 deploy:
   provider: pypi
   user: MrYoda
   password:
-    secure: oBBzxRoJ0BtltucASBMsnQHQwXXO/G4LBYYFPTTA8B6ojwZwjWNUM0NUuU5H4gcAyx/PERO71qzWnbux4ILrSzKw2/C2OgJEXVpYV+R6ULUip3wLYIdoLENEW/F+O5HPxm2fXWiHxXbeSZhy7dU0j98EygbSIrwSWRq6j/AZnPF/NJDS30909uv6CnNVnKZy6TKo8v7YJERB08ggWcauXzW8zAfcS/Y/23Jz3uT/X49QGjzZBE/nTJF+PV5vXECzDMSOWSDTBfFhYth4txKP53JAnDWh/aIT8pgVkcxSUCySxvK5UgVO38/UYUiVpJLTwQbQxh0xd+d7Mm/kKe5JlYcyw/4wtxq7nPXBuILC6rbTiBVWanVMrqMn0DWhLC/B9rrOzZ6rH1xn4MdM3wVdUbP108F8Kg3zqTpOAb6ctVZHAo/FD3JiP+a4BXe8sS3E7QEG0yB5vZyNwUNhpjVJGJHFmAlsHWHHXIz/hjo6u8NOyy1dRKhHQcMvcOuuMifK7vhF0PnLA0EetwEK4SM24WRn/i5cL8fG3/PtvJ3YIUwIN+SazPdDthH7chqIwLTHcBXT5XLlTdbg/lEYXUfFMA6Buz1vRdcISiS5Rdfzm40ayPt9Aeyh5O+dYBSUR28I8nu5SmAUdvhNeeuOBSCr19/Kjrrj7+wzs9Qlbur2SuE=
+    secure: NBQTNXG6UrsEvVmLSrC4ZXNHZ9lEigFDbNzkUonVZcGDEgD+QlQULscJxlhrJCuorwZYxNRRaLubkYqnFtuD98gfVwBQ6MSSYUVNF2HjS/tqb+N+G6sxMW1yNGyEsuSqZwlV7KPZcrtScadnJf9VVN+yOYioA1hg7lAjuOyRuhVzJCVCp/9CEABwEaOH2iJYVt+MOtAk0KiFZf1xy3r6ZF3iO+d8QzAyKTtti1Xt389ugNJ4HBSeh6QtuMVxluOM0tYipnQ/NUguLb6BsRWqDMatUZezGpJNZwQ04ZwPf8xTiYXDK+0OibHSONdS1XT13stOzhGFoRBrBGy4fgBSkSyeXk44/ZDCoAkLjgOMrTGilEa5/Q39j1LOha1/HqD1XWLu8ffVmbz/fr2NILpgVve/6ZZ7w1NRNUP9qrYP0von+M/FH2WBX6TL9nYFvJBqOhoegiMQvSS9ThZxmIaJ36EF/WOnjKbFl2oGQ9mGVlsojYOPAZLwkSNsbkHayKbbgYrVDr6yQDysBuDjKvL2RLqedolZEY7Sxp+pLqF8rb0M8ZxibeiqnC4GoiJeL8KWMLC2pPHMrST3zOadXbiW8rFcleyqBdsPiaOmSfmtQzLo+gekaAaEpMxjM8tT9qgdYAXGKT+bprKUo7LyezoMncsVCXpBvgm1bizEwjJWL+4=
   on:
     tags: true
+    distributions: sdist bdist_wheel
     repo: DirectlineDev/django-hitcounter
-    branch: master
