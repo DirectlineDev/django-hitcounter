@@ -11,6 +11,9 @@ Django Hitcounter
 .. image:: https://badge.fury.io/py/djangohitcounter.svg
     :target: http://badge.fury.io/py/djangohitcounter
 
+.. image:: https://coveralls.io/repos/DirectlineDev/django-hitcounter/badge.svg?branch=master&service=github
+    :target: https://coveralls.io/github/DirectlineDev/django-hitcounter?branch=master
+
 
 
 About
@@ -71,7 +74,7 @@ Usage is pretty simple too.
 TODO
 ----
 
-* tests and autotests on CI
+* tests and autotests on CI (ready)
 * badges: pypi (ready), build (ready), coverage (after tests)
 
 License
