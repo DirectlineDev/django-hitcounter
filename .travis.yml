@@ -1,13 +1,19 @@
 language: python
-matrix:
-  include:
-    - python: 3.5
-      env:
-      - TOXENV=py35
+python:
+  - 3.5
+sudo: false
+env:
+  - TOXENV=py27-django17
+  - TOXENV=py27-django18
+  - TOXENV=py27-django19
+  - TOXENV=py34-django17
+  - TOXENV=py34-django18
+  - TOXENV=py34-django19
+  - TOXENV=py35-django19
 install:
-- pip install tox
+  - pip install -q tox
 script:
-- tox
+  - tox
 deploy:
   provider: pypi
   user: MrYoda
