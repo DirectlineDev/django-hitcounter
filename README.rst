@@ -71,11 +71,6 @@ Usage is pretty simple too.
   Counter.objects.for_model(obj)  # get all counter records for our object
   Counter.objects.for_model(obj, total=True)  # get total hits count for object
 
-TODO
-----
-
-* tests and autotests on CI (ready)
-* badges: pypi (ready), build (ready), coverage (after tests)
 
 License
 -------
