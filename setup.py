@@ -9,7 +9,7 @@ def readfile(file_path):
 
 setup(
     name='djangohitcounter',
-    version='0.1.4',
+    version='0.1.5',
 
     author='Anton Kuzmichev',
     author_email='assargin@gmail.com',
