@@ -55,4 +55,3 @@ class Counter(models.Model):
         obj, _ = cls.objects.get_or_create(content_type=ct, object_pk=obj._get_pk_val(), date=date,
                                            defaults={'hits': 0})
         cls.objects.filter(pk=obj.pk).update(hits=F('hits')+amount)
-
