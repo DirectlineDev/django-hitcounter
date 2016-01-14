@@ -2,6 +2,9 @@
 Django Hitcounter
 =================
 
+.. image:: https://badges.gitter.im/MrYodda/DirectlineDev.svg
+    :target: https://gitter.im/MrYoda/DirectlineDev?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+
 .. image:: https://badge.fury.io/gh/DirectlineDev%2Fdjango-hitcounter.svg
     :target: http://badge.fury.io/gh/DirectlineDev%2Fdjango-hitcounter
 
